@@ -326,7 +326,8 @@ if s:style == "light"
     endif
 else
     if s:contrast_bg == "high"
-        hi Normal                       guibg=#121212
+        " hi Normal                       guibg=#121212
+        hi Normal                       guibg=#000000
     else
         hi Normal                       guibg=#303030
     endif
@@ -360,7 +361,7 @@ if s:style == "light"
     if s:contrast == "low"
         hi Comment      guifg=#9e9e9e
         hi Conceal      guifg=#9e9e9e
-        hi Constant     guifg=#d78700
+        hi Constant     guifg=#d78700k
         hi Directory    guifg=#00af87
         hi Identifier   guifg=#00af00
         hi PreProc      guifg=#00afaf
@@ -397,7 +398,8 @@ else
     elseif s:contrast == "high"
         hi Comment      guifg=#8a8a8a
         hi Conceal      guifg=#8a8a8a
-        hi Constant     guifg=#ffffd7
+        " hi Constant     guifg=#ffffd7
+        hi Constant     guifg=#ffaf5f
         hi Directory    guifg=#d7ffd7
         hi Identifier   guifg=#d7ffaf
         hi PreProc      guifg=#afffd7
@@ -573,7 +575,7 @@ else
     hi CursorLineNr guifg=#9e9e9e   guibg=#444444
     hi FoldColumn                   guibg=#4e4e4e
     hi Folded                       guibg=#4e4e4e
-    hi LineNr       guifg=#626262   guibg=#444444
+    hi LineNr       guifg=#626262   guibg=#121212
     hi PmenuSel                     guibg=#005f87
     hi SignColumn                   guibg=#4e4e4e
     hi StatusLineNC guifg=#4e4e4e
